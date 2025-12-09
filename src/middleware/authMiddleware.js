@@ -2,7 +2,7 @@
 const jwt = require('jsonwebtoken');
 
 function authMiddleware(req, res, next) {
-  // Expect header: Authorization: Bearer <token>
+ 
   const authHeader = req.headers['authorization'];
 
   if (!authHeader) {
